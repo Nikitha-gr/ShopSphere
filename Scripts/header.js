@@ -8,7 +8,9 @@ export const header = () => {
         <div class="main-header">
             <div id="search-left">
                 <div class="logo">
-                    <img src="./Assets/images/company_logo.png" alt="Seara Logo">
+                    <a href="index.html">
+                        <img src="./Assets/logo/company_logo.png" alt="Seara Logo">
+                    </a>
                 </div>
                 <div class="search-bar">
                     <input type="text" placeholder="Search for clothes, shoes, etc.">
