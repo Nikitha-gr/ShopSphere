@@ -1,0 +1,74 @@
+#form-container {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#form-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-tabs>button {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color:rgb(231, 244, 255);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#form-tabs>button:hover {
+    background-color: rgb(167, 216, 255);
+}
+
+#form-tabs>button.active {
+    background-color: mediumblue;
+    color: white;
+}
+
+.form {
+    display: none;
+    padding: 1rem;
+}
+
+.form.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+input[type="email"], 
+input[type="password"], 
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: mediumblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: navy;
+}
