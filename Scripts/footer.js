@@ -1,5 +1,5 @@
 export const footer = () => {
-    let footer = document.getElementsByName("footer");
+    // let footer = document.getElementsByName("footer");
     let card = ` <div class="logo">
       <a href="#"><img id="footer-logo" src="Assets/logo/facebook-logo.png" alt="Facebook Logo"></a>
       <a href="#"><img id="footer-logo" src="Assets/logo/instagram-logo.png" alt="instagram Logo Logo"></a>
@@ -38,7 +38,7 @@ export const footer = () => {
         <a href="#">Brands</a>
         <a href="#">Clothing</a>
         <a href="#">The Style Room</a>
-        <a href="#">Eyeweark</a>
+        <a href="#">Eyewear</a>
         <a href="#">New Arrivals</a>
         <a href="#">Running</a>
         <a href="#">Jackets</a>
