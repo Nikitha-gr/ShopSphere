@@ -40,7 +40,6 @@ project-directory/
 ├── Scripts/          # JavaScript folder
 ├── Assets/           # Images and other logos
 ├── README.md         # Project documentation
-```
 
 ---
 
