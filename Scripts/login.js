@@ -3,8 +3,11 @@ import { baseurl } from "./baseurl.js";
 document.getElementById("login-submit").addEventListener("click", async (event) => {
     event.preventDefault();
 
-    let email = document.getElementById("login-email").value;
-    let password = document.getElementById("login-password").value;
+    let emailInput = document.getElementById("login-email");
+    let passwordInput = document.getElementById("login-password");
+
+    let email = emailInput.value;
+    let password = passwordInput.value;
 
     try {
         let response = await fetch(`${baseurl}/users`);
@@ -22,12 +25,16 @@ document.getElementById("login-submit").addEventListener("click", async (event) 
             if (user.password === password) {
                 alert("Login success!");
                 localStorage.setItem("loggedInUser", email);
+                emailInput.value = "";
+                passwordInput.value = "";
                 window.location.href = "index.html";
             } else {
                 alert("Incorrect password.");
             }
         } else {
             alert("No email found. Please sign up.");
+            emailInput.value = "";
+            passwordInput.value = "";
         }
     } catch (error) {
         console.error("Error:", error);
@@ -38,9 +45,13 @@ document.getElementById("login-submit").addEventListener("click", async (event) 
 document.getElementById("signup-submit").addEventListener("click", async (event) => {
     event.preventDefault();
 
-    let email = document.getElementById("signup-email").value;
-    let password = document.getElementById("signup-password").value;
-    let confirmPassword = document.getElementById("signup-confirm-password").value;
+    let emailInput = document.getElementById("signup-email");
+    let passwordInput = document.getElementById("signup-password");
+    let confirmPasswordInput = document.getElementById("signup-confirm-password");
+
+    let email = emailInput.value;
+    let password = passwordInput.value;
+    let confirmPassword = confirmPasswordInput.value;
     let products = [];
 
     if (password !== confirmPassword) {
@@ -49,7 +60,6 @@ document.getElementById("signup-submit").addEventListener("click", async (event)
     }
 
     try {
-        // Fetch existing users to check for duplicate email
         let response = await fetch(`${baseurl}/users`);
 
         if (!response.ok) {
@@ -65,7 +75,6 @@ document.getElementById("signup-submit").addEventListener("click", async (event)
             return;
         }
 
-        // Proceed with signup if email does not exist
         response = await fetch(`${baseurl}/users`, {
             method: "POST",
             headers: {
@@ -75,7 +84,13 @@ document.getElementById("signup-submit").addEventListener("click", async (event)
         });
 
         if (response.ok) {
-            alert("Signup successful! Pleases log in.");
+            alert("Signup successful! Please log in.");
+            emailInput.value = "";
+            passwordInput.value = "";
+            confirmPasswordInput.value = "";
+
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("signup-form").style.display = "none";
         } else {
             alert("Failed to sign up.");
         }

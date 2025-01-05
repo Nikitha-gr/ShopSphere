@@ -1,24 +1,25 @@
 import { baseurl } from "./baseurl.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const productsContainer = document.getElementById("cart-container"); // Use the correct container id
-    const cartTotal = document.getElementById("cart-total");
-    const cartSubtotal = document.getElementById("cart-subtotal"); // Add for subtotal
-    const cartTax = document.getElementById("cart-tax"); // Add for tax (optional)
-    const cartShipping = document.getElementById("cart-shipping"); // Add for shipping (optional)
-    const cartGrandTotal = document.getElementById("cart-grand-total"); // Add for grand total
+    let productsContainer = document.getElementById("cart-container"); 
+    let cartTotal = document.getElementById("cart-total");
+    let cartSubtotal = document.getElementById("cart-subtotal");
+    let cartTax = document.getElementById("cart-tax");
+    let cartShipping = document.getElementById("cart-shipping");
+    let cartGrandTotal = document.getElementById("cart-grand-total");
+    let logoutButton = document.getElementById("logout-btn");
 
     try {
-        const userEmail = localStorage.getItem("loggedInUser"); // Get logged-in user
+        let userEmail = localStorage.getItem("loggedInUser"); // Get logged-in user
         if (!userEmail) {
             alert("Please log in to view your cart.");
             window.location.href = "login.html";
             return;
         }
 
-        const response = await fetch(`${baseurl}/users`);
-        const users = await response.json();
-        const user = users.find(user => user.email === userEmail);
+        let response = await fetch(`${baseurl}/users`);
+        let users = await response.json();
+        let user = users.find(user => user.email === userEmail);
 
         if (!user || !user.products || user.products.length === 0) {
             productsContainer.innerHTML = "<p>Your cart is empty.</p>";
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         user.products.forEach((product, index) => {
             totalPrice += product.price;
 
-            const productCard = document.createElement("div");
+            let productCard = document.createElement("div");
             productCard.id = "product-card";
 
             productCard.innerHTML = `
@@ -46,21 +47,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Subtotal Calculation
         cartSubtotal.textContent = `$${totalPrice.toFixed(2)}`;
 
-        // Example: Calculate Tax (e.g., 8%)
-        const taxAmount = totalPrice * 0.08; // 8% tax
+        let taxAmount = totalPrice * 0.08;
         cartTax.textContent = `$${taxAmount.toFixed(2)}`;
 
-        // Example: Shipping Cost (e.g., $5)
-        const shippingCost = 5.00; // Flat shipping rate
+        let shippingCost = 5.00;
         cartShipping.textContent = `$${shippingCost.toFixed(2)}`;
 
-        // Grand Total (Subtotal + Tax + Shipping)
-        const grandTotal = totalPrice + taxAmount + shippingCost;
+        let grandTotal = totalPrice + taxAmount + shippingCost;
         cartGrandTotal.textContent = `$${grandTotal.toFixed(2)}`;
 
         document.querySelectorAll(".remove-btn").forEach(button => {
             button.addEventListener("click", async (event) => {
-                const index = event.target.getAttribute("data-index");
+                let index = event.target.getAttribute("data-index");
 
                 user.products.splice(index, 1); // Remove product from array
 
@@ -76,6 +74,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         document.querySelector(".checkout-btn").addEventListener("click", () => {
             alert("Proceeding to checkout...");
+        });
+
+        // Logout functionality
+        logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("loggedInUser"); // Clear user from local storage
+            alert("You have been logged out.");
+            window.location.href = "login.html"; // Redirect to login
         });
 
     } catch (error) {
