@@ -21,6 +21,7 @@ document.getElementById("login-submit").addEventListener("click", async (event) 
             let user = matchingUsers[0];
             if (user.password === password) {
                 alert("Login success!");
+                localStorage.setItem("loggedInUser", email);
                 window.location.href = "index.html";
             } else {
                 alert("Incorrect password.");
@@ -40,6 +41,7 @@ document.getElementById("signup-submit").addEventListener("click", async (event)
     let email = document.getElementById("signup-email").value;
     let password = document.getElementById("signup-password").value;
     let confirmPassword = document.getElementById("signup-confirm-password").value;
+    let products = [];
 
     if (password !== confirmPassword) {
         alert("Passwords do not match.");
@@ -69,7 +71,7 @@ document.getElementById("signup-submit").addEventListener("click", async (event)
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ email, password }),
+            body: JSON.stringify({ email, password, products }),
         });
 
         if (response.ok) {

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const products = await response.json();
 
         products
-            .filter(product => product.price <= 100) // Filter products under $100
+            .filter(product => product.category === "kids") // Filter only kids products
             .forEach(product => {
                 const productCard = document.createElement("div");
                 productCard.id = "product-card";

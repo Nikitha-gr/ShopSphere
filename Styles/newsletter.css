@@ -45,3 +45,64 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    #newsletter {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 20px;
+    }
+  
+    .newstext {
+      width: 100%;
+    }
+  
+    .newstext>h1 {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  
+    .newstext>p {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+  
+    .newstext>form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .newstext>form>input {
+      width: 100%;
+    }
+  
+    .newstext>form>button {
+      width: 100%;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #newsletter {
+      padding: 20px 15px;
+    }
+  
+    .newstext>h1 {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+    }
+  
+    .newstext>p {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  
+    .newstext>form {
+      gap: 10px;
+    }
+  
+    .newstext>form>button {
+      font-size: 0.85rem;
+    }
+  }  

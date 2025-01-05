@@ -19,3 +19,43 @@
 .side-bar-container>h4 {
     color: gray;
 }
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 75%;
+        margin: 0 0.2rem;
+        padding: 0 0.2rem;
+    }
+
+    .side-bar-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10% 0;
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-bar-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5% 0;
+        font-size: 0.9rem;
+        margin: 0 10px;
+        justify-content: space-around;
+    }
+
+    .side-bar-container>h4 {
+        font-size: 1rem;
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+}

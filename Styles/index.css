@@ -51,6 +51,7 @@ main {
   text-decoration: none;
 }
 
+/* Winter Clearence */
 .winter-clearance {
   display: flex;
   align-items: center;
@@ -106,8 +107,8 @@ main {
 }
 
 .image-content>img {
-  width: 400px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
   border-radius: 5px;
   object-fit: cover;
   opacity: 0.9;
@@ -151,4 +152,87 @@ main {
   padding: 10px;
   text-align: center;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  #hero-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-content>img {
+    width: 300px;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .winter-clearance {
+    flex-direction: row;
+    height: 80vh;
+    text-align: left;
+  }
+
+  .text-content {
+    max-width: 40%;
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .text-content > h1 {
+    font-size: 3rem;
+  }
+
+  .image-content {
+    max-width: 60%;
+  }
+
+  .image-content > img {
+    width: 12.5rem;
+  }
+
+  .shop-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width:360px) and (max-width: 767px) {
+  #hero-cont{
+    grid-template-columns: repeat(1, 1fr);
+  } 
+  
+  .shop-container>h1 {
+    display: none;
+  }
+
+  .winter-clearance {
+    flex-direction: column;
+    height: auto;
+    padding: 0.2rem;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding: 0.2rem;
+  }
+
+  .text-content>h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-content>p {
+    padding: 0 0.2rem;
+  }
+
+  .shop-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .image-content>img {
+    display: none;
+  }
 }
