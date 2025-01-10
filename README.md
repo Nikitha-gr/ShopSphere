@@ -81,8 +81,8 @@ project-directory/
 
 🎥 Video Demonstration
 
-🔗 Watch the full demonstration of the project:  Video Demo
-
+🔗 Watch the full demonstration of the project:  [Watch this video](./Assets/Project_Demonstration.mp4)
+ 
 ---
 
 ## 🐞 Known Issues
