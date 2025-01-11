@@ -45,16 +45,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
         // Subtotal Calculation
-        cartSubtotal.textContent = `$${totalPrice.toFixed(2)}`;
+        cartSubtotal.textContent = `$${totalPrice}`;
 
         let taxAmount = totalPrice * 0.08;
-        cartTax.textContent = `$${taxAmount.toFixed(2)}`;
+        cartTax.textContent = `$${taxAmount}`;
 
         let shippingCost = 5.00;
-        cartShipping.textContent = `$${shippingCost.toFixed(2)}`;
+        cartShipping.textContent = `$${shippingCost}`;
 
         let grandTotal = totalPrice + taxAmount + shippingCost;
-        cartGrandTotal.textContent = `$${grandTotal.toFixed(2)}`;
+        cartGrandTotal.textContent = `$${grandTotal}`;
 
         document.querySelectorAll(".remove-btn").forEach(button => {
             button.addEventListener("click", async (event) => {
