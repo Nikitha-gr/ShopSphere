@@ -1,4 +1,4 @@
-# 🌟 Seara Responsive Web Application 🌟
+# 🌟 ShopSphere Responsive Web Application 🌟
 
 ## 📖 Description
 Seara is a responsive web application designed for seamless navigation across all devices, including desktop 🖥️, tablet 📱, and mobile 📲. The project includes a product showcase 🛍️, a newsletter subscription form 📬, a cart feature 🛒, and categorized sections for products under $50 💵, under $100 💰, and for kids 🧸.
