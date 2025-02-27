@@ -9,7 +9,7 @@ export const header = () => {
             <div id="search-left">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="./Assets/logo/company_logo.png" alt="Seara Logo">
+                        <img src="./Assets/logo/company_logo.png" alt="Company Logo">
                     </a>
                 </div>
                 <div class="search-bar">

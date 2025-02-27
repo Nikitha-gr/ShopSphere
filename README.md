@@ -1,7 +1,7 @@
 # 🌟 ShopSphere Responsive Web Application 🌟
 
 ## 📖 Description
-Seara is a responsive web application designed for seamless navigation across all devices, including desktop 🖥️, tablet 📱, and mobile 📲. The project includes a product showcase 🛍️, a newsletter subscription form 📬, a cart feature 🛒, and categorized sections for products under $50 💵, under $100 💰, and for kids 🧸.
+ShopSphere is a responsive web application designed for seamless navigation across all devices, including desktop 🖥️, tablet 📱, and mobile 📲. The project includes a product showcase 🛍️, a newsletter subscription form 📬, a cart feature 🛒, and categorized sections for products under $50 💵, under $100 💰, and for kids 🧸.
 
 ---
 
@@ -27,7 +27,7 @@ Seara is a responsive web application designed for seamless navigation across al
 - **Backend:** 🖥️ Localhost for development
 
 ## Deployment
-- **Frontend:** [Live Application][https://nikitha-gr.github.io/Seara/]
+- **Frontend:** [Live Application][https://nikitha-gr.github.io/ShopSphere/]
 - **Backend:** [Glitch Deployment][https://broad-guiltless-appalachiosaurus.glitch.me/]
 ---
 
@@ -76,12 +76,6 @@ project-directory/
 ### 📬 Newsletter & Footer 
 - Users can subscribe to receive updates.
 - ![Newsletter & Footer Page](./Assets/Screenshots/Footer_section.png)
-
----
-
-🎥 Video Demonstration
-
-🔗 Watch the full demonstration of the project:  [Watch this video](./Assets/Project_Demonstration.mp4)
  
 ---
 
