@@ -48,34 +48,34 @@ project-directory/
 ### 🏠 Home Page
 - Displays the product grid and navigation bar.
 - Includes a banner for promotions.
-- ![HomePage](./Assets/Screenshots/Hero_section.png)
+ ![HomePage](./Assets/Screenshots/Hero_section.png)
 
 ### 🎥 Poster Section
 - A visually appealing section showcasing promotions or featured content.
-- ![Poster Section](./Assets/Screenshots/Poster_Section.png)
+ ![Poster Section](./Assets/Screenshots/Poster_Section.png)
 
 ### 📂 Categorized Sections
 - Separate sections for products under $50 💵, under $100 💰, and for kids 🧸.
-- ![Categorized Section](./Assets/Screenshots/Categorized_sections.png)
+ ![Categorized Section](./Assets/Screenshots/Categorized_sections.png)
 - Filtered product grids with descriptions.
-- ![Under 50](./Assets/Screenshots/Under_50_Page.png)
-- ![Under 100](./Assets/Screenshots/Under_100_Page.png)
-- ![Kids Section](./Assets/Screenshots/Kids_Page.png)
+ ![Under 50](./Assets/Screenshots/Under_50_Page.png)
+ ![Under 100](./Assets/Screenshots/Under_100_Page.png)
+ ![Kids Section](./Assets/Screenshots/Kids_Page.png)
 
 ### 🔑 Login and Signup Forms
 - Simple forms for user authentication.
-- ![Login Form](./Assets/Screenshots/Login_Form.png)
-- ![Signup Form](./Assets/Screenshots/SignUp_Form.png)
+ ![Login Form](./Assets/Screenshots/Login_Form.png)
+ ![Signup Form](./Assets/Screenshots/SignUp_Form.png)
 
 ### 🛒 Cart
 - Allows users to add and remove items.
 - Displays a summary of selected items with total price.
-- ![Upper Part of Cart Page](./Assets/Screenshots/Cart_Page.png)
-- ![Lower Part of Cart Page](./Assets/Screenshots/Cart_Page2.png)
+ ![Upper Part of Cart Page](./Assets/Screenshots/Cart_Page.png)
+ ![Lower Part of Cart Page](./Assets/Screenshots/Cart_Page2.png)
 
 ### 📬 Newsletter & Footer 
 - Users can subscribe to receive updates.
-- ![Newsletter & Footer Page](./Assets/Screenshots/Footer_section.png)
+ ![Newsletter & Footer Page](./Assets/Screenshots/Footer_section.png)
  
 ---
 
