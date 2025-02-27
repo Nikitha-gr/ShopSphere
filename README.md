@@ -60,14 +60,23 @@ project-directory/
 - Filtered product grids with descriptions.
 - Under 50 Section
  ![Under 50](./Assets/Screenshots/Under_50_Page.png)
+
 - Under 100 Section
+
  ![Under 100](./Assets/Screenshots/Under_100_Page.png)
+
  - Kids Section
+
  ![Kids Section](./Assets/Screenshots/Kids_Page.png)
 
 ### 🔑 Login and Signup Forms
 - Simple forms for user authentication.
+
+Login Form
+
  ![Login Form](./Assets/Screenshots/Login_Form.png)
+
+Signup Form
 
  ![Signup Form](./Assets/Screenshots/SignUp_Form.png)
 
