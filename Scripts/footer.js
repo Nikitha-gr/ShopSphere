@@ -6,14 +6,14 @@ export const footer = () => {
     </div>
     <div class="footer-links">
       <div class="col">
-        <h3>About Seara</h3>
+        <h3>About ShopSphere</h3>
         <a href="#">About</a>
-        <a href="#">Seara ONE</a>
-        <a href="#">Seara for Good</a>
-        <a href="#">Seara for Work</a>
-        <a href="#">Get the Seara Mobile App</a>
+        <a href="#">ShopSphere ONE</a>
+        <a href="#">ShopSphere for Good</a>
+        <a href="#">ShopSphere for Work</a>
+        <a href="#">Get the ShopSphere Mobile App</a>
         <a href="#">Amazon Prime Benefits</a>
-        <a href="#">Seara VIP Benefits</a>
+        <a href="#">ShopSphere VIP Benefits</a>
         <a href="#">Coupons & Sales</a>
         <a href="#">Accessibility Statement</a>
       </div>
@@ -34,7 +34,7 @@ export const footer = () => {
         <a href="#">Take Survey</a>
       </div>
       <div class="col">
-        <h3>Explore Seara</h3>
+        <h3>Explore ShopSphere</h3>
         <a href="#">Brands</a>
         <a href="#">Clothing</a>
         <a href="#">The Style Room</a>
@@ -44,13 +44,13 @@ export const footer = () => {
         <a href="#">Jackets</a>
         <a href="#">Shoes</a>
         <a href="#">Watches</a>
-        <a href="#">Seara Adaptive</a>
+        <a href="#">ShopSphere Adaptive</a>
         <a href="#">All Departments</a>
       </div>
     </div>
 
     <div class="copyright">
-      <h5>&copy; 2024–2025 - Seara.com HTML CSS JS E-commerce Website</h5>
+      <h5>&copy; 2024–2025 - ShopSphere.com HTML CSS JS E-commerce Website</h5>
     </div>`;
 
     document.getElementById("footer").innerHTML = card
