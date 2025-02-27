@@ -58,19 +58,24 @@ project-directory/
 - Separate sections for products under $50 💵, under $100 💰, and for kids 🧸.
  ![Categorized Section](./Assets/Screenshots/Categorized_sections.png)
 - Filtered product grids with descriptions.
+- Under 50 Section
  ![Under 50](./Assets/Screenshots/Under_50_Page.png)
+- Under 100 Section
  ![Under 100](./Assets/Screenshots/Under_100_Page.png)
+ - Kids Section
  ![Kids Section](./Assets/Screenshots/Kids_Page.png)
 
 ### 🔑 Login and Signup Forms
 - Simple forms for user authentication.
  ![Login Form](./Assets/Screenshots/Login_Form.png)
+
  ![Signup Form](./Assets/Screenshots/SignUp_Form.png)
 
 ### 🛒 Cart
 - Allows users to add and remove items.
 - Displays a summary of selected items with total price.
  ![Upper Part of Cart Page](./Assets/Screenshots/Cart_Page.png)
+
  ![Lower Part of Cart Page](./Assets/Screenshots/Cart_Page2.png)
 
 ### 📬 Newsletter & Footer 
